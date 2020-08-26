@@ -14,3 +14,49 @@ tests/tools/tool2/test_tool_two.py .                                            
 
 ============================================ 6 passed in 0.05s =============================================
 ```
+
+## Tree structure
+
+```
+.
+├── README.md
+├── __init__.py
+├── setup.py
+├── requirements.txt
+├── libraries
+│   ├── __init__.py
+│   └── common
+│       ├── __init__.py
+│       └── name_capitalize.py
+├── services
+│   ├── __init__.py
+│   ├── srva
+│   │   ├── __init__.py
+│   │   └── hello.py
+│   └── srvb
+│       ├── __init__.py
+│       ├── goodbye.py
+│       └── secret.py
+└── tools
+    ├── tool1
+    │   ├── __init__.py
+    │   └── toolone.py
+    └── tool2
+        ├── __init__.py
+        └── tooltwo.py
+├── tests
+│   ├── __init__.py
+│   ├── services
+│   │   ├── __init__.py
+│   │   ├── srva
+│   │   │   ├── __init__.py
+│   │   │   └── test_hello.py
+│   │   └── srvb
+│   │       ├── test_common_interaction.py
+│   │       └── test_goodbye.py
+│   └── tools
+│       ├── tool1
+│       │   └── test_tool_one.py
+│       └── tool2
+│           └── test_tool_two.py
+```
